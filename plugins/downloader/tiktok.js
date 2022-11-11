@@ -2,7 +2,9 @@ var handler = async(msg, {
 client, text, usedPrefix, command
 }) => {
 if (!text) return msg.reply(`Gunakan format ${usedPrefix + command} *link tiktok*`)
-require('../../system/tiktok')(text).then(async v => {
+client.sendReact(msg.from, '🕒', msg.key)
+try {
+require('../../system/tiktok').tiktok(text).then(async v => {
 var imageMess = await client.sendImage(msg.from, v.thumbnail, `*乂 T I K T O K - D O W N L O A D E R*
 
      *◦ Caption :* ${v.title}
@@ -17,6 +19,10 @@ if (command === 'tiktokaudio' || command == 'tiktoka' || command == 'tiktokmp3' 
 client.sendAudio(msg.from, v.audio, imageMess, { isUrl:true })
 }
 })
+} catch(e) {
+msg.reply(`🚩 Can\'t download media.`)
+client.sendReact(msg.from, '❌', msg.key)
+}
 }
 handler.help = ['tiktok','tiktokaudio']
 handler.tags = ['dl']
