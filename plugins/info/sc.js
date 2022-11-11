@@ -1,5 +1,5 @@
 const handler = async (msg, { client }) => {
-msg.reply("https://github.com/Hyzerr/Hyzer-MD-V100")
+msg.reply("https://github.com/Hyzerr/Hyzer-MD-V4\n\n*[❗] Don\'t forget to fork and give star this repo.*")
 }
 handler.tags = ['info']
 handler.help = ['sc']
