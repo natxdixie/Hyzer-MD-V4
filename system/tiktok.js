@@ -1,4 +1,4 @@
-const axios = requir('axios')
+const axios = require('axios')
 
 async function tiktok(query) {
   let response = await axios("https://lovetik.com/api/ajax/search", {
