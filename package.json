@@ -1,12 +1,12 @@
 {
-    "name": "Shiro-md",
-    "version": "3.5.4",
+    "name": "WHATSAPP-BOT V4",
+    "version": "4.0.0",
     "description": "Simple Bot WhatsApp",
     "depecrated": false,
     "main": "index.js",
     "directories": {
-        "lib": "lib",
-        "src": "src",
+        "system": "system",
+        "database": "system/database",
         "plugins": "plugins"
     },
     "scripts": {
