@@ -7,8 +7,8 @@ const vk = await client.sendImage(msg.from, v.thumb, `*乂 Y O U T U B E - V I D
 client.sendVideo(msg.from, v.result, null, vk, { isUrl:true })
 })
 }
-handler.tags = ['ytv','ytmp4']
-handler.help = ['dl']
+handler.help = ['ytv','ytmp4']
+handler.tags = ['dl']
 handler.command = /^(youtubevideo|ytvideo|ytv|ytmp4)$/i
 
 handler.limit = true
