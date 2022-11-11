@@ -122,7 +122,8 @@ let handler = async (msg, { client, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    msg.reply(text.trim())
+    var buffer = await Func.resize(fs.readFileSync('./global/media/me.jpg'), 300, 150)
+    client.sendImage(msg.from, buffer, text, msg, { asLocation: true, buttons: [{buttonId: `.owner`, buttonText: {displayText: 'Owner 🐾'}, type: 1}, {buttonId: `.db`, buttonText: {displayText: 'Dashboard 🌐'}, type: 1}], headerType: 4, footer: wm })
     } catch (e) {
     client.reply(msg.from, 'Maaf, menu sedang error', msg)
     throw e
