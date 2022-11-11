@@ -1,4 +1,3 @@
-//━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
 let { generateWAMessageFromContent, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let moment = require('moment-timezone')
 let fs = require('fs')
@@ -7,7 +6,7 @@ let fetch = require('node-fetch')
 let levelling = require('../../system/levelling')
 let spa = '    '
 let tags = {
-  'dl': 'DOWNLOADER *USE LIMIT*',
+  'dl': 'DOWNLOADER',
   'group': 'GROUP',
   'info': 'INFO',
   'owner': 'OWNER',
@@ -96,8 +95,8 @@ let handler = async (msg, { client, usedPrefix: _p }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%islimit/g, menu.limit ? '(Limit)' : '')
-                .replace(/%isPremium/g, menu.premium ? '(Premium)' : '')
+                .replace(/%islimit/g, menu.limit ? ' ' : '')
+                .replace(/%isPremium/g, menu.premium ? ' ' : '')
                 .trim()
             }).join('\n')
           }),
@@ -124,7 +123,7 @@ let handler = async (msg, { client, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     var buffer = await Func.resize(fs.readFileSync('./global/media/me.jpg'), 300, 150)
-    client.sendImage(msg.from, buffer, text, msg, { asLocation: true, buttons: [{buttonId: `.owner`, buttonText: {displayText: 'Owner 🐾'}, type: 1}, {buttonId: `.db`, buttonText: {displayText: 'Dashboard 🌐'}, type: 1}], headerType: 4, footer: wm })
+    client.sendImage(msg.from, buffer, text, msg, { asLocation: true, buttons: [{buttonId: `.owner`, buttonText: {displayText: 'Owner 🐾'}, type: 1}, {buttonId: `.db`, buttonText: {displayText: 'Dashboard 🌐'}, type: 1}], headerType: 4, footer: Info.botWm })
     } catch (e) {
     client.reply(msg.from, 'Maaf, menu sedang error', msg)
     throw e
