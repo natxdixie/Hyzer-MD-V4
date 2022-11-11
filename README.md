@@ -9,7 +9,7 @@
 Isi semua informasi bot di file [`settings.json`](https://github.com/Hyzerr/Hyzer-MD-V4/blob/master/global/settings.json)<br />
 
 ## ITSUKI BOT ROOM
-[![WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/CpX9a5PPLmwHWsG85DlorE) 
+[![WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/IxBejqgYlXKENKPJsF7EOP) 
 
 ## CONNECT
 
