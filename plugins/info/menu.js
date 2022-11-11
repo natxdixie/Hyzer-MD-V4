@@ -7,13 +7,14 @@ let fetch = require('node-fetch')
 let levelling = require('../../system/levelling')
 let spa = '    '
 let tags = {
-  'dl': 'DOWNLOADER',
+  'dl': 'DOWNLOADER *USE LIMIT*',
   'group': 'GROUP',
   'info': 'INFO',
   'owner': 'OWNER',
   'anime': 'ANIME',
   'tools': 'TOOLS',
   'random': 'RANDOM',
+  'web': 'INTERNET',
 }
 const defaultMenu = {
   before: `*${Func.ucapan()}, ${Info.botName} Here*\n`,
