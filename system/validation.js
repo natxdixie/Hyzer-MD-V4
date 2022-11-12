@@ -527,6 +527,18 @@ if (msg.isCommand) {
 console.log(chalk.keyword('cyan')(`[ ${msg.isGroup ? 'GROUP CHAT' : 'PERSONAL CHAT'} ]`), chalk.bold.rgb(239, 225, 3)(`${chalk.rgb(255, 255, 255)(new Date())}`), chalk.keyword('cyan')(`\n=> Dari ${msg.pushName}, ${msg.isGroup ? msg.from : msg.sender}`), chalk.bold.rgb(239, 225, 3)(`${chalk.rgb(255, 255, 255)(`\n=> ${msg.text || msg.mtype}\n---------------------------------------------------`)}`))
 }
 
+// Made By Hyzer Official, Silahkan Pakai 😇
+if (msg.message && !msg.isCommand) {
+this.menfess = this.menfess ? this.menfess : {}
+if (this.menfess[msg.sender].id != 0 && msg.quoted.footerText == '_Menfess - Whatsapp Bot_') {
+var txt =  `🚩 Hi kamu mendapatkan balasan menfess dari @${msg.sender.split('@')[0]}\n\n*Isi Balasan :* ${msg.text}`.trim()
+this.reply(this.menfess[msg.sender].dari, txt, null, { mentions: this.parseMention(txt) })
+this.reply(msg.from, "🚩 Berhasil mengirim balasan.", msg)
+await Func.sleep(750)
+delete this.menfess[msg.sender]
+}
+}
+
 if (msg.message && !msg.isBaileys) {
 if (!(msg.message.buttonsResponseMessage || msg.message.templateButtonReplyMessage || msg.message.listResponseMessage)) return
 let id = msg.message.buttonsResponseMessage?.selectedButtonId || msg.message.templateButtonReplyMessage?.selectedId || msg.message.listResponseMessage?.singleSelectReply.selectedRowId
