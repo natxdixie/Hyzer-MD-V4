@@ -8,52 +8,52 @@ var type = (args[0] || '').toLowerCase()
 switch (type) {
 case 'welcome': {
 if (!msg.isGroup) return msg.reply('🚩' + Only.group)
-if (!isAdmin) return msg.reply('🚩' + Only.admin)
+if (!isAdmins) return msg.reply('🚩' + Only.admin)
 chat.welcome = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} welcome pada group ini.*`)
 }
 break
 case 'antilink': {
 if (!msg.isGroup) return msg.reply('🚩' + Only.group)
-if (!isAdmin) return msg.reply('🚩' + Only.admin)
+if (!isAdmins) return msg.reply('🚩' + Only.admin)
 chat.antilink = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} antilink pada group ini.*`)
 }
 break
 case 'nsfw': {
-if (msg.isGroup && !isAdmin) return msg.reply('🚩' + Only.admin)
+if (msg.isGroup && !isAdmins) return msg.reply('🚩' + Only.admin)
 chat.nsfw = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} akses nsfw pada chat ini.*`)
 }
 break
 case 'antiviewonce': {
 if (!msg.isGroup) return msg.reply('🚩' + Only.group)
-if (!isAdmin) return msg.reply('🚩' + Only.admin)
+if (!isAdmins) return msg.reply('🚩' + Only.admin)
 chat.once = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} antiviewonce pada group ini.*`)
 }
 break
 case 'antitoxic': {
-if (msg.isGroup && !isAdmin) return msg.reply('🚩' + Only.admin)
+if (msg.isGroup && !isAdmins) return msg.reply('🚩' + Only.admin)
 chat.toxic = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} antitoxic pada group ini.*`)
 }
 break
 case 'autodl': case 'autodownload': {
-if (msg.isGroup && !isAdmin) return msg.reply('🚩' + Only.admin)
+if (msg.isGroup && !isAdmins) return msg.reply('🚩' + Only.admin)
 chat.autodl = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} autodownload pada chat ini.*`)
 }
 break
 case 'antidelete': {
-if (msg.isGroup && !isAdmin) return msg.reply('🚩' + Only.admin)
+if (msg.isGroup && !isAdmins) return msg.reply('🚩' + Only.admin)
 chat.delete = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} antidelete pada chat ini.*`)
 }
 break
 case 'pengumuman': {
 if (!msg.isGroup) return msg.reply('🚩' + Only.group)
-if (!isAdmin) return msg.reply('🚩' + Only.admin)
+if (!isAdmins) return msg.reply('🚩' + Only.admin)
 chat.info = isEnable
 msg.reply(`*🚩 Berhasil ${isEnable ? 'mengaktifkan' : 'menonaktifkan'} pengumuman pada group ini.*`)
 }
@@ -111,7 +111,7 @@ client.reply(msg.from, `*乂 D A F T A R  -  O P S I*
 ${usedPrefix}on antilink
 ${usedPrefix}off antilink
 `, msg)
-throw false
+return false
 }
 }
 }
