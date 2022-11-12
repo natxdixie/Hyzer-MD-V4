@@ -23,16 +23,16 @@
         "ShiraoriBOT",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/Paquito1923/elyasmd",
+    "homepage": "https://github.com/Hyzerr/Hyzer-MD-V4",
     "author": {
-        "name": "Elyas"
+        "name": "HyzerOfficial"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Paquito1923/elyasmd.git"
+        "url": "git+https://github.com/Hyzerr/Hyzer-MD-V4.git"
     },
     "bugs": {
-        "url": "https://github.com/Paquito1923/elyasmd/issues"
+        "url": "https://github.com/Hyzerr/Hyzer-MD-V4/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
@@ -41,7 +41,7 @@
         "@bochilteam/scraper": "2.0.0",
         "awesome-phonenumber": "^2.69.0",
         "axios": "^0.26.0",
-        "caliph-api": "^0.7.6",
+        "caliph-api": "github:caliphdev/caliph-api",
         "catch": "^1.0.48",
         "cfonts": "^2.10.0",
         "chalk": "^4.1.2",
