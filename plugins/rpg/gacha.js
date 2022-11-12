@@ -3,6 +3,9 @@ var handler = async (msg, {
 client, command, args, usedPrefix 
 }) => {
 try {
+var buttons = [{buttonId: `.menu`, buttonText: {displayText: 'Menu'}, type: 1}, {buttonId: `.owner`, buttonText: {displayText: 'Owner'}, type: 1}]
+var buffer = fs.readFileSync('./global/media/Rpg/open.jpg')
+var bufloc = await Func.resize(buffer, 300, 150)
 var noCapt = `Gunakan format ${usedPrefix + command} <nama crate> <jumlah>
 
 *Contoh :* ${usedPrefix + command} common 2
@@ -200,7 +203,7 @@ user.petFood += mknp * 1
 msg.reply(gakDapetApa(mknp * 1))
 }
 } else msg.reply('Pet Crate kamu tidak cukup')
-} else client.sendImage(msg.from, fs.readFileSync('./global/media/Rpg/open.jpg'), noCapt, msg, { isUrl: true })
+} else client.sendImage(msg.from, bufloc, noCapt, msg, { asLocation: true, buttons: buttons, footer: wm, headerType: 4 })
 } catch (e) {
 throw e
 }
@@ -232,7 +235,7 @@ function random(maxRandom) {
 }
 
 function mus(crate, crate_count, money, exp, potion, kayu, batu, string, iron, common, uncommon, diamond) {
-    return `Kamu telah membuka *${crate_count} ${crate} Crate ${emot(crate)}* dan mendapatkan:${!money ? '' : `\n💹 *Money:* ${money} 💲`}${!exp ? '' : `\n✨ *Exp:* ${exp}`}${!potion ? '' : `\n🥤 *Potion:* ${potion}`}${!kayu ? '' : `\n🪵 *Kayu:* ${kayu}`}${!batu ? '' : `\n🪨 *Batu:* ${batu}`}${!string ? '' : `\n🕸 ️*String:* ${string}`}${!iron ? '' : `\n⛓️ *Iron:* ${iron}`}${!diamond ? '' : `\n💎 *Diamond:* ${diamond}`}${!common ? '' : `\n📦 *Common:* ${common}`}${!uncommon ? '' : `\n🛍️ *Uncommon:* ${uncommon}`}`
+    return `Kamu telah membuka *${crate_count} ${crate} Crate ${emot(crate)}* dan mendapatkan:${!money ? '' : `\n💹 *Money:* ${Func.toRupiah(money)} 💲`}${!exp ? '' : `\n✨ *Exp:* ${exp}`}${!potion ? '' : `\n🥤 *Potion:* ${potion}`}${!kayu ? '' : `\n🪵 *Kayu:* ${kayu}`}${!batu ? '' : `\n🪨 *Batu:* ${batu}`}${!string ? '' : `\n🕸 ️*String:* ${string}`}${!iron ? '' : `\n⛓️ *Iron:* ${iron}`}${!diamond ? '' : `\n💎 *Diamond:* ${diamond}`}${!common ? '' : `\n📦 *Common:* ${common}`}${!uncommon ? '' : `\n🛍️ *Uncommon:* ${uncommon}`}`
 }
 
 function haveRare(count) {
