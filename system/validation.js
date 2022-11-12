@@ -100,6 +100,31 @@ user.legendary = 0
 if (!isNumber(user.pet))
 user.pet = 0
 
+if (!isNumber(user.sapi))
+user.sapi = 0
+if (!isNumber(user.banteng))
+user.banteng = 0
+if (!isNumber(user.harimau))
+user.harimau = 0
+if (!isNumber(user.gajah))
+user.gajah = 0
+if (!isNumber(user.kambing))
+user.kambing = 0
+if (!isNumber(user.panda))
+user.panda = 0
+if (!isNumber(user.buaya))
+user.buaya = 0
+if (!isNumber(user.kerbau))
+user.kerbau = 0
+if (!isNumber(user.sapi))
+user.sapi = 0
+if (!isNumber(user.monyet))
+user.monyet = 0
+if (!isNumber(user.ayam))
+user.ayam = 0
+if (!isNumber(user.domba))
+user.domba = 0
+
 if (!isNumber(user.horse))
 user.horse = 0
 if (!isNumber(user.horseexp))
@@ -145,6 +170,8 @@ user.fishingroddurability = 0
 
 if (!isNumber(user.lastclaim))
 user.lastclaim = 0
+if (!isNumber(user.lasthourly))
+user.lasthourly = 0
 if (!isNumber(user.lastadventure))
 user.lastadventure = 0
 if (!isNumber(user.lastfishing))
@@ -199,6 +226,19 @@ mythic: 0,
 legendary: 0,
 pet: 0,
 
+sapi: 0,
+banteng: 0,
+harimau: 0,
+gajah: 0,
+kambing: 0,
+panda: 0,
+buaya: 0,
+kerbau: 0,
+sapi: 0,
+monyet: 0,
+ayam: 0,
+domba: 0,
+
 horse: 0,
 horseexp: 0,
 cat: 0,
@@ -223,6 +263,7 @@ fishingrod: 0,
 fishingroddurability: 0,
 
 lastclaim: 0,
+lasthourly: 0,
 lastadventure: 0,
 lastfishing: 0,
 lastdungeon: 0,
@@ -624,7 +665,7 @@ break
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 fs.unwatchFile(file)
-console.log(chalk.redBright("Update 'handler.js'"))
+console.log(chalk.redBright("Update Validation Bot."))
 delete require.cache[file]
 if (global.reloadHandler) console.log(global.reloadHandler())
 })
