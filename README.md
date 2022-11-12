@@ -26,14 +26,8 @@ Untuk request atau report bug bisa chat saya disini [Whatsapp](https://wa.me/628
 -   [x] Stabil,
 -   [x] Dan ringan
 
-# Creator
-<a href="http://github.com/Hyzerr"><img src="http://github.com/Hyzerr.png?size=100" width="100" height="100"></a> | [![helga](http://github.com/ilmanhdyt.png?size=100)](http://github.com/ilmanhdyt)
-----|----
-[HyzerDev](http://github.com/Hyzerr) | [Ilman](http://github.com/ilmanhdyt)
-Creator | Base Source
-
 # Thanks To
-<a href="http://github.com/FatihArridho"><img src="http://github.com/FatihArridho.png?size=100" width="100" height="100"></a> | [![Farel](http://github.com/rlxfly.png?size=100)](http://github.com/rlxfly)
-----|----
-[Fatih A.](http://github.com/FatihArridho) | [Farel](http://github.com/rlxfly)
-Sensei | Helper
+<a href="http://github.com/FatihArridho"><img src="http://github.com/FatihArridho.png?size=100" width="100" height="100"></a> | [![Farel](http://github.com/rlxfly.png?size=100)](http://github.com/rlxfly) | [![Ilman](http://github.com/ilmanhdyt.png?size=100)](http://github.com/ilmanhdyt)
+----|----|---
+[Fatih A.](http://github.com/FatihArridho) | [Farel](http://github.com/rlxfly) | [Ilman](http://github.com/ilmanhdyt)
+Sensei | Helper | Base Source 
