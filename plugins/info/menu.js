@@ -14,6 +14,7 @@ let tags = {
   'tools': 'TOOLS',
   'random': 'RANDOM',
   'web': 'INTERNET',
+  'rpg': 'RPG',
 }
 const defaultMenu = {
   before: `*${Func.ucapan()}, ${Info.botName} Here*\n`,
