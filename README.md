@@ -25,3 +25,9 @@ Untuk request atau report bug bisa chat saya disini [Whatsapp](https://wa.me/628
 -   [x] Mudah digunakan,
 -   [x] Stabil,
 -   [x] Dan ringan
+
+# CONTRIBUTOR 
+<a href="http://github.com/FatihArridho"><img src="http://github.com/FatihArridho.png?size=100" width="100" height="100"></a> | [![Farel](http://github.com/rlxfly.png?size=100)](http://github.com/rlxfly)
+----|----
+[Fatih A.](http://github.com/FatihArridho) | [Farel](http://github.com/rlxfly)
+Sensei | Helper
