@@ -20,7 +20,7 @@ msg.reply(`🚩 Kirim/reply gambar/video/gif dengan caption ${usedPrefix + comma
 }
 }
 handler.help = ['sticker','s','sgif','stickergif'].map(v => v + ' <reply image>')
-handler.tags = ['sticker']
+handler.tags = ['convert']
 handler.command = /^(sticker|stiker|s|stickergif|stikergif|sgif)$/i
 
 module.exports = handler
