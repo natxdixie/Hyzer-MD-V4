@@ -16,6 +16,7 @@ let tags = {
   'web': 'INTERNET',
   'rpg': 'RPG',
   'anonymous': 'ANONYMOUS',
+  'nsfw': 'NSFW',
 }
 const defaultMenu = {
   before: `*${Func.ucapan()}, ${Info.botName} Here*\n`,
