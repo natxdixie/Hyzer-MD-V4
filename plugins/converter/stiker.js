@@ -19,8 +19,8 @@ await fs.unlinkSync(encvideo)
 msg.reply(`🚩 Kirim/reply gambar/video/gif dengan caption ${usedPrefix + command}\nDurasi Video/Gif 1-9 Detik`)
 }
 }
-handler.help = ['sticker','s'].map(v => v + ' <reply image>')
+handler.help = ['sticker','s','sgif','stickergif'].map(v => v + ' <reply image>')
 handler.tags = ['sticker']
-handler.command = /^(sticker|stiker|s)$/i
+handler.command = /^(sticker|stiker|s|stickergif|stikergif|sgif)$/i
 
 module.exports = handler
