@@ -5,7 +5,7 @@ client, text, command, usedPrefix
 var _timers = (86400000 - (new Date - user.lastclaim))
 var timers = Func.clockString(_timers) 
 if (new Date - user.lastclaim > 86400000) {
-var bufer = await Func.resize(fs.readFileSync('./global/media/Rpg/monthly.jpg'), 300, 150)
+var bufer = await Func.resize(fs.readFileSync('./global/media/Rpg/daily.jpg'), 300, 150)
 client.sendImage(msg.from, bufer, `*乂 D A I L Y  -  C L A I M*
 
 + Rp 1.000.000 Money 💵
