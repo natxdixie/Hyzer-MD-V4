@@ -20,7 +20,7 @@ const listMessage = {
 text: '*🚩 Berikut adalah hasil lainnya secara keseluruhan, pilih gambar yang ingin diunduh disini.*',
 footer: Info.botWm,
 title: `*乂 R E S U L T  -  A L P H A C O D E R S*\n`,
-buttonText: "Hasil Keseluruhan Dari " + text,
+buttonText: "Hasil keseluruhan dari " + text,
 sections
 }
 var firstAlpha = await client.sendImage(msg.from, forFirst.thumb, `*乂 A L P H A C O D E R S*\n\n  *◦ Url :* ${forFirst.img}\n  *◦ Width :* ${forFirst.width}\n  *◦ Height :* ${forFirst.height}\n  *◦ Ext :* ${forFirst.ext}\n  *◦ Source :* ${forFirst.url}`, msg, { isUrl:true })
@@ -47,4 +47,4 @@ handler.limit = true
 
 module.exports = handler
 
-// bilek
+// ???
