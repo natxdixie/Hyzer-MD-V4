@@ -17,6 +17,8 @@ let tags = {
   'rpg': 'RPG',
   'anonymous': 'ANONYMOUS',
   'nsfw': 'NSFW',
+  'convert': 'CONVERTER',
+  'gm': 'GAME',
 }
 const defaultMenu = {
   before: `*${Func.ucapan()}, ${Info.botName} Here*\n`,
