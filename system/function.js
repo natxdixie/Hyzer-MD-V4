@@ -328,6 +328,16 @@ var kiyomasa = await oyy.resize(width, height).getBufferAsync(jimp.MIME_JPEG)
 return kiyomasa
 }
 
+exports.satuButton = async (id, teks) => {
+var but = [{buttonId: id, buttonText: {displayText: teks }, type: 1}]
+return but
+}
+
+exports.duaButton = async (id, teks, row, display) => {
+var buoti = [{buttonId: id, buttonText: {displayText: teks }, type: 1},{buttonId: row, buttonText: {displayText: display }, type: 1}]
+return buoti
+}
+
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
