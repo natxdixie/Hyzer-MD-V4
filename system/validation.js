@@ -467,7 +467,7 @@ if (msg.isCommand && !isPremium && !msg.isGroup && db.data.settings[botNumber].g
 this.sendOrder(msg.from, fs.readFileSync('./global/media/logo.jpg'), '100', '20', 'ITSUKI-NAKANO WHATSAPP BOT', `
 *Mode : Group Only*
 
-Hi kak ${msg.pushName}, bot sedang dalam mode hanya group. Tidak dapat menggunakan bot di pesan pribadi. Silahkan upgrade ke premium untuk menggunakan bot di pesan pribadi ketika dalam mode group only dengan command *#daftarprem*, atau join group official kami untuk menggunakan bot.\n\n${Info.groupbot}
+Hi kak ${msg.pushName}, bot sedang dalam mode hanya group. Tidak dapat menggunakan bot di pesan pribadi. Silahkan upgrade ke premium untuk menggunakan bot di pesan pribadi ketika dalam mode group only dengan command *#daftarprem*, atau join group official kami untuk menggunakan bot.\n\n${Info.groupBot}
 `.trim(), msg)
 continue
 }
