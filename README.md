@@ -28,4 +28,4 @@ Untuk request atau report bug bisa chat saya disini [Whatsapp](https://wa.me/628
 
 ###### Contributor
 [![Fatih Arridho](https://github.com/FatihArridho.png?size=100)](https://github.com/FatihArridho)
-[![Ilman ](https://github.com/ilmanhdyt.png?size=100](https://github.com/ilmanhdyt)
+[![Ilman ](https://github.com/ilmanhdyt.png?size=100)](https://github.com/ilmanhdyt)
