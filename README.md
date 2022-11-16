@@ -30,3 +30,4 @@ Untuk request atau report bug bisa chat saya disini [Whatsapp](https://wa.me/628
 [![Fatih Arridho](https://github.com/FatihArridho.png?size=100)](https://github.com/FatihArridho)
 [![Ilman](https://github.com/ilmanhdyt.png?size=100)](https://github.com/ilmanhdyt)
 [![Zackmans](https://github.com/zackmans.png?size=100)](https://github.com/zackmans)
+[![DikaArdnt](https://github.com/DikaArdnt.png?size=100)](https://github.com/DikaArdnt)
