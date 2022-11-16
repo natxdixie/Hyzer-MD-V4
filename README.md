@@ -26,8 +26,6 @@ Untuk request atau report bug bisa chat saya disini [Whatsapp](https://wa.me/628
 -   [x] Stabil,
 -   [x] Dan ringan
 
-# Thanks To
-<a href="http://github.com/FatihArridho"><img src="http://github.com/FatihArridho.png?size=100" width="100" height="100"></a> | [![ilman](http://github.com/ilmanhdyt.png?size=100)](http://github.com/ilmanhdyt)
-----|----
-[Fatih A.](http://github.com/FatihArridho) | [Ilman](http://github.com/ilmanhdyt)
-Sensei | Base Shiraori 
+###### Contributor
+[![Fatih Arridho](https://github.com/FatihArridho.png?size=100)](https://github.com/FatihArridho)
+[![Ilman ](https://github.com/ilmanhdyt.png?size=100](https://github.com/ilmanhdyt)
