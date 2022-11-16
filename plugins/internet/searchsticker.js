@@ -15,7 +15,7 @@ msg.reply(`*🚩 Hasil tidak ditemukan.*`)
 }
 }
 handler.help = ['stickersearch','stikersearch'].map(v => v + ' <url>')
-handler.tags = ['web]
+handler.tags = ['web']
 handler.command = /^(searchsticker|stickersearch|stikersearch)$/i
 
 handler.limit = true
