@@ -1,13 +1,13 @@
 {
- "success": "✓ Success",
- "regist": "Silahkan daftar terlebih dahulu sebelum menggunakan fitur ini dengan menggunakan #daftar nama.umur",
- "restrict": "Fitur ini dinonaktifkan oleh owner.",
- "admin": "Fitur Khusus Admin Group!",
- "botAdmin": "Bot Harus Menjadi Admin Terlebih Dahulu!",
- "owner": "Fitur Khusus Owner Bot",
- "group": "Fitur Digunakan Hanya Untuk Group!",
- "personal": "Fitur Digunakan Hanya Untuk Private Chat!",
- "bot": "Fitur Khusus Pengguna Nomor Bot",
- "wait": "Loading...",
- "nsfw": "Akses nsfw belum di aktifkan pada chat ini, kamu dapat mengaktifkannya dengan mengetik #enable nsfw"
+ "success": "*_✓ Success_*",
+ "regist": "*_Silahkan daftar terlebih dahulu sebelum menggunakan fitur ini dengan menggunakan #daftar nama.umur_*",
+ "restrict": "*_Fitur ini dinonaktifkan oleh owner._*",
+ "admin": "*_Fitur Khusus Admin Group!_*",
+ "botAdmin": "*_Bot Harus Menjadi Admin Terlebih Dahulu!_*",
+ "owner": "*_Fitur Khusus Owner Bot_*",
+ "group": "*_Fitur Digunakan Hanya Untuk Group!_*",
+ "personal": "*_Fitur Digunakan Hanya Untuk Private Chat!_*",
+ "bot": "*_Fitur Khusus Pengguna Nomor Bot_*",
+ "wait": "*_Loading..._*",
+ "nsfw": "*_Akses nsfw belum di aktifkan pada chat ini, kamu dapat mengaktifkannya dengan mengetik #enable nsfw_*"
 }
